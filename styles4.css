@@ -1,0 +1,398 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*code*/
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 40px;
+    right: 0;
+    background-color: floralwhite;
+    border-bottom: 5px solid black;
+    z-index: 999999;
+}
+
+body {
+    background-image: url(https://pbs.twimg.com/media/FqBDcVracAI44uy?format=jpg&name=4096x4096);
+    background-size: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.insta {
+    width: 500px;
+    height: 200px;
+    background-image: url(ckia.png);
+    background-size: 500px 200px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    text-indent: -999999px;
+    position: absolute;
+    top: -174px;
+    left: 230px;
+}
+
+.Container {
+
+    width: 960px;
+    margin: 200px auto;
+    background-color: #fff;
+    position: relative;
+}
+
+.header .title {
+    padding: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.header ul li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.header nav {
+    padding-left: 20px;
+}
+
+.header a {
+    color: slateblue;
+
+}
+
+.header a:hover {
+    background-color: darkgray;
+    color: red;
+}
+
+.header a:active {
+    color: black;
+}
+
+.pict {
+    height: 270px;
+    width: 100%;
+    background-image: url(https://pbs.twimg.com/profile_banners/1219658790913445888/1586888093/600x200);
+    background-size: 100%;
+    padding-left: auto;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+.par .main {
+    width: 600px;
+    padding: 25px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.main h2 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    padding-bottom: 10px;
+
+}
+
+.main .p1 {
+    font-size: 17px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 70px;
+}
+
+.bio {
+    width: 300px;
+    float: right;
+    padding: 25px;
+    position: absolute;
+    left: 650px;
+    top: -15px;
+}
+
+.bio h2 {
+    font-weight: bold;
+    color: grey;
+}
+
+.bio img {
+    width: 60px;
+    float: left;
+    padding-right: 15px;
+    padding-top: 13px;
+    padding-bottom: 5px;
+}
+
+.bio p {
+    padding-top: 13px;
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+}
+
+footer {
+    background-color: gray;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 15px;
+}
+
+
+.side {
+    width: 300px;
+    float: right;
+    padding: 25px;
+
+    position: absolute;
+    left: 750px;
+    top: 450px;
+}
+
+@keyframes quiet {
+    25%{
+      transform: scaleY(.6);
+    }
+    50%{
+      transform: scaleY(.4);
+    }
+    75%{
+      transform: scaleY(.8);
+    }
+  }
+  
+  @keyframes normal {
+    25%{
+      transform: scaleY(1);
+    }
+    50%{
+      transform: scaleY(.4);
+    }
+    75%{
+      transform: scaleY(.6);
+    }
+  }
+  @keyframes loud {
+    25%{
+      transform: scaleY(1);
+    }
+    50%{
+      transform: scaleY(.4);
+    }
+    75%{
+      transform: scaleY(1.2);
+    }
+  }
+  
+  
+  .boxContainer{
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    --boxSize: 8px;
+    --gutter: 4px;
+    width: calc((var(--boxSize) + var(--gutter)) * 7);
+  }
+  
+  .box{
+    transform: scaleY(.4);
+    height: 100%;
+    width: var(--boxSize);
+    background: #000;
+    border-color: solid slategray;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    border-radius: 8px;
+  }
+  
+  .box1{
+    animation-name: quiet;
+  }
+  
+  .box2{
+    animation-name: normal;
+  }
+  
+  .box3{
+    animation-name: quiet;
+  }
+  
+  .box4{
+    animation-name: loud;
+  }
+  
+  .box5{
+    animation-name: quiet;
+  }
+  .box6{
+    animation-name: normal;
+  }
+  
+  .box7{
+    animation-name: loud;
+  }
+  
+  .box8{
+    animation-name: quiet;
+  }
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+.cf {
+    *zoom: 1;
+}
